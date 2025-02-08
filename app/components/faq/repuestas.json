@@ -1,0 +1,121 @@
+{
+  "Reglamento": [
+    {
+      "titulo": "¿Cuál es el código de vestimenta?",
+      "descripción": "El código de vestimenta es el siguiente:",
+      "list": [
+        "Remera blanca (sin estampados ni logos grandes).",
+        "Jeans sin roturas, en color negro o azul.",
+        "No se permite el uso de piercings visibles.",
+        "No se permite el uso de maquillaje."
+      ]
+    },
+    {
+      "titulo": "¿Cuál es el código de vestimenta?",
+      "descripción": "El código de vestimenta es el siguiente:",
+      "list": [
+        "Remera blanca (sin estampados ni logos grandes).",
+        "Jeans sin roturas, en color negro o azul.",
+        "No se permite el uso de piercings visibles.",
+        "No se permite el uso de maquillaje."
+      ]
+    },
+    {
+      "titulo": "¿Cómo se sancionan las conductas?",
+      "descripción": "El código de vestimenta es el siguiente:",
+      "list": [
+        "Remera blanca (sin estampados ni logos grandes).",
+        "Jeans sin roturas, en color negro o azul.",
+        "No se permite el uso de piercings visibles.",
+        "No se permite el uso de maquillaje."
+      ]
+    },
+    {
+      "titulo": "Faltas e Inasistencias",
+      "descripción": "El código de vestimenta es el siguiente:",
+      "list": [
+        "Remera blanca (sin estampados ni logos grandes).",
+        "Jeans sin roturas, en color negro o azul.",
+        "No se permite el uso de piercings visibles.",
+        "No se permite el uso de maquillaje."
+      ]
+    }
+  ],
+
+  "TurnosHorarios": [
+    {
+      "titulo": "¿Cuáles son los horarios?",
+      "descripcion": "En esta sección se proporcionan los horarios generales de funcionamiento de la institución, incluyendo apertura y cierre, así como horarios específicos para diferentes actividades."
+    },
+    {
+      "titulo": "¿Cuáles son los horarios de los turnos?",
+      "descripcion": "Aquí se detallan los horarios específicos de los turnos disponibles para los estudiantes. Incluye información sobre la duración de cada turno y los intervalos entre ellos."
+    }
+  ],
+
+  "InscripcionesPases": [
+    {
+      "titulo": "Requisitos para la inscripción a 1º año",
+      "descripcion": "Para inscribir a tu hijo en 1º año, se deben presentar los siguientes documentos y cumplir con los requisitos:",
+      "requisitos": [
+        "1 Carpeta de legajo",
+        "Constancia de alumno regular (7º grado)",
+        "Certificado de 7º grado con informe pedagógico (marzo, obligatorio)",
+        "Fotocopia del acta de nacimiento",
+        "Fotocopia del DNI del alumno y del tutor",
+        "Fotocopia del CUIL del alumno y del tutor",
+        "Fotocopia del carnet de vacunas",
+        "Certificado de buena salud y aptitud física (marzo)",
+        "1 Folio oficio",
+        "Pago de inscripción a la cooperadora: $3000"
+      ],
+      "venta_uniformes": {
+        "tiendas": [
+          {
+            "nombre": "Ditex",
+            "direccion": "Calle 8 entre 1 y 3 (del ensanche)"
+          },
+          {
+            "nombre": "Imprenta El Maestro",
+            "direccion": "Calle 10 entre 15 y 17"
+          }
+        ]
+      }
+    },
+    {
+      "titulo": "¿Qué documentos son necesarios para el pase?",
+      "descripcion": "Aquí se enumeran los documentos que deben presentarse para solicitar un pase. Incluye detalles sobre cada documento y su importancia en el proceso de solicitud."
+    },
+    {
+      "titulo": "¿Cuándo inicia el periodo de inscripciones?",
+      "descripcion": "El periodo de inscripciones inicia el 1 de marzo y finaliza el 31 de mayo. Durante este tiempo, los aspirantes pueden presentar sus documentos en la oficina de admisiones."
+    },
+    {
+      "titulo": "¿Cómo puedo realizar un pase desde otra institución?",
+      "descripcion": "Para realizar un pase desde otra institución, debes presentar una solicitud formal, acompañada de tu historial académico y una carta de buena conducta de tu institución anterior."
+    }
+  ],
+
+  "MateriaDeudadas": [
+    {
+      "titulo": "¿Qué son las materias adeudadas?",
+      "descripcion": "Son aquellas materias que no se han aprobado en el ciclo lectivo correspondiente y que deben regularizarse antes de finalizar los estudios."
+    },
+    {
+      "titulo": "¿Cuándo debo rendir las materias adeudadas?",
+      "descripcion": "Las fechas para rendir materias adeudadas son establecidas por la institución al inicio de cada ciclo lectivo. Se recomienda consultar el calendario académico."
+    },
+    {
+      "titulo": "¿Cuántas materias puedo adeudar sin perder el año?",
+      "descripcion": "El número de materias que se pueden adeudar sin perder el año puede variar según las normativas de la institución. Generalmente, se permiten hasta tres materias."
+    },
+    {
+      "titulo": "¿Qué sucede si no apruebo una materia adeudada?",
+      "descripcion": "Si no apruebas una materia adeudada, tendrás nuevas oportunidades en futuros exámenes, pero es importante regularizar todas las materias antes de graduarte."
+    },
+    {
+      "titulo": "¿Dónde puedo encontrar el temario de las materias adeudadas?",
+      "descripcion": "El temario de las materias adeudadas se puede consultar en la página web de la institución o en la secretaría académica."
+    }
+  ]
+}
