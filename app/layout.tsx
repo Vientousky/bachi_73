@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Footer from "./layout/Pie";
 import "./ui/globals.css";
 import "./ui/fonts"
 
@@ -17,6 +18,8 @@ export default function RootLayout({
     <html lang="es">
       <body>
         {children}
+
+        <Footer/>
       </body>
     </html>
   );

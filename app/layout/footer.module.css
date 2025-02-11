@@ -1,0 +1,32 @@
+.footer {
+    background-color: rgb(22, 27, 43);
+    border-radius: 20px 20px 0 0;
+    max-width: 1000px;
+    min-height: 26vh;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+}
+
+.titulo {
+    color: orange;
+    font-size: 4rem;
+    font-family: var(--fonts-Sofia);
+    letter-spacing: 2px;
+    display: inline-block; 
+    border-bottom: 3px solid ;
+    border-image-source: linear-gradient(to right, transparent, orange, transparent);
+    border-image-slice: 1;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 1.4rem;
+    display: inline-block; 
+    border-bottom: 2px solid ;
+    border-image-source: linear-gradient(to right, transparent, rgb(34, 53, 104), transparent);
+    border-image-slice:1;
+    margin-bottom: 15px;
+    padding-bottom: 1rem;
+}
