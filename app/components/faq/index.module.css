@@ -8,11 +8,11 @@
     h1 {
         font-size: 3rem;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 2.8rem;
     }
 }
 
-/*===< Filtro >=== */
+/* <===< Filtro >===> */
 
 .filterContainer {
     display: grid;
@@ -22,10 +22,10 @@
 
     & .filterItem {
         cursor: pointer;
-        background-color: rgba(29, 37, 53, 0.45);
+        background-color: var(--card);
         backdrop-filter: blur(8px);
         border-radius: 18px;
-        border: 1px solid transparent;
+        border: 1px solid var(--card-border);
         padding: 1rem 12px;
         text-align: center;
         transition: 0.3s ease-in-out;
@@ -65,7 +65,7 @@
 
 }
 
-/*===< Repuestas >=== */
+/* <===< Repuestas >===> */
 
 .respuestas {
     display: flex;

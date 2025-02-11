@@ -6,7 +6,7 @@
     width: 90%;
 
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
 
     .aboutImg {
         flex: 0 0 50%;
@@ -19,10 +19,12 @@
     }
 }
 
+/* <===< Lugar de imagen >===> */
+
 .aboutImg {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 220px 220px;
     gap: 20px;
 
     & div {
@@ -62,7 +64,7 @@
 
     .item4 {
         transform: rotate(-5deg);
-        border-radius:0 20px ;
+        border-radius: 0 20px;
 
         &:hover {
             transform: rotate(0deg);
@@ -71,17 +73,19 @@
 }
 
 
-/* ===< textos >=== */
+/* <===< textos >===> */
 
 .aboutInfo {
 
     h1,
     h2 {
         margin-bottom: 1rem;
+        color: var(--text-primary);
     }
 
     h1 {
         font-size: 3.25rem;
+        
     }
 
     h2 {
@@ -95,7 +99,9 @@
     }
 
     p {
+        color: var(--text-secondary);
         font-size: 1.25rem;
+        font-weight: 500;
         line-height: 1.6;
     }
 }

@@ -32,11 +32,11 @@ const Nosotros: React.FC = () => {
         </h2>
 
         <p>
-          Esta institución nació en 1988, inicialmente funcionando en el Colegio
+          Nació en 1988, inicialmente funcionando en el Colegio
           EEP N°990 en el turno noche. Años después, gracias al apoyo de la
           comunidad, se trasladó al edificio del exmercado municipal, ubicado en
           el 713 viviendas. Al principio fue difícil, pero con el esfuerzo de la
-          gente, el colegio fue creciendo y se convirtió en lo que es hoy en día
+          comunidad, el colegio fue creciendo y se convirtió en lo que es hoy en día
         </p>
       </div>
     </section>

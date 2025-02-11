@@ -21,9 +21,10 @@
     h1 {
         font-size: 4rem;
 
-        .destacados {
-            color:#ffae00;
-            font-family: var(--fonts-Sofia);
+        > strong {
+
+            font-family: var(--font-sofia);
+            padding-left: 10px;
         }
     }
 

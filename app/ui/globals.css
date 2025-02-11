@@ -1,34 +1,50 @@
 :root {
   --font-montserrat: 'Montserrat', sans-serif;
-  --fonts-Sofia: "Sofia", serif;
+  --font-sofia: "Sofia", serif;
 
   --background: #ffffff;
-  --foreground: #171717;
+  --background-line: #f0f0f0;
+
+  --card: rgba(226, 228, 235, 0.7);
+  --card-border: rgba(0, 0, 0, 0.1); 
+  --card-box-shadow-hover: rgba(0, 0, 0, 0.2);
+
+  --text-primary: #000000;
+  --text-secondary: #333333;
+
+  --color-blue: rgb(20, 110, 230);   
+  --color-green: rgb(5, 180, 45);    
+  --color-yellow: rgb(240, 180, 10); 
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: rgba(18, 18, 18, 0.98);
+    --background-line: rgb(40, 40, 40); 
+
+    --card: rgba(30, 30, 30, 0.65);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --card-box-shadow-hover: rgba(0, 0, 0, 0.3); 
+
+    --card-backdrop-filter: blur(10px);
+
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
   }
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
+
+
 
 body {
-  color: var(--foreground);
-  background-color: #121212;
-  background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
-  background-size: 6rem 4rem;  
+  color: var(--text-primary);
+  background-color: var(--background);
+  background-image:
+    linear-gradient(to right, var(--background-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--background-line) 1px, transparent 1px);
+    background-size: 6rem 4rem;
   font-family: var(--font-montserrat);
 }
-
 
 * {
   box-sizing: border-box;
@@ -50,8 +66,6 @@ p {
   text-wrap: pretty;
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -61,4 +75,10 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.text-gradient {
+  background:linear-gradient(90deg, var(--color-blue), white, var(--color-green)) ;
+  background-clip: text;
+  color: transparent;
 }
