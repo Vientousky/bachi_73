@@ -7,7 +7,7 @@ const HomeHero: React.FC = () => {
       <div className={styles.container}>
         <h1>
           ¡Bievenido a la{" "}
-          <strong className={styles.destacados}>ESS N59!</strong>
+          <strong className="text-gradient">ESS N59!</strong>
         </h1>
 
         <p>

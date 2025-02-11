@@ -38,7 +38,8 @@ const FAQ: React.FC = () => {
 
   return (
     <section className={styles.faq}>
-      <h1>Preguntas Frecuentes</h1>
+
+      <h1 className="titulo">Preguntas frecuentes</h1>
 
       <div className={styles.filterContainer}>
         {(Object.keys(data) as Category[]).map((category) => (
