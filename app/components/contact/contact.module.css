@@ -1,0 +1,90 @@
+.contact {
+    max-width: 1000px;
+    min-height: 60vh;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 10rem;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem 2rem;
+}
+
+
+/* ===< contactos >=== */
+
+.titulo{
+    grid-column: 1 /-1;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cardbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: rgba(29, 37, 53, 0.45);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    text-align: center;
+    padding: 1rem;
+
+    & h1 {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+
+    &:nth-child(3) {
+        grid-column: 1 / -1;
+    }
+}
+
+/* ===< tabla >=== */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.caption {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.th, .td {
+    padding: 1rem;
+    text-align: left;
+    background-color: rgba(29, 37, 53, 0.45);
+    backdrop-filter: blur(8px);
+    color: #fff;
+}
+
+.th {
+    background-color: rgb(29, 37, 53);
+    font-weight: bold;
+}
+
+.tbody .tr:nth-child(2n) {
+    background-color: rgb(33, 39, 53);
+}
+
+/* ===< mapa >=== */
+
+.maps iframe {
+    width: 100%;
+    height: 100%;
+}

@@ -5,17 +5,20 @@ const HomeHero: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        <h1>¡Bievenido a la ESS N59!</h1>
+        <h1>
+          ¡Bievenido a la{" "}
+          <strong className={styles.destacados}>ESS N59!</strong>
+        </h1>
 
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-          accusantium quos voluptas optio saepe quidem ea facere consequuntur
+          En esta institución, tanto usted como sus hijos tendrán la oportunidad
+          de adquirir un amplio abanico de conocimientos.
         </p>
 
-        <div>
-          <a href="">Aqui tambien</a>
+        <div className={styles.btn}>
+          <a href="">Ver Reglamento</a>
 
-          <button>Aqui ira algo</button>
+          <a href="">Saber mas</a>
         </div>
       </div>
     </section>
