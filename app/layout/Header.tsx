@@ -28,7 +28,7 @@ const Header: React.FC = () => {
                     setActiveSection(entry.target.id);
                 }
             });
-        }, { threshold: 0.5 }); // Detecta cuando el 50% de la sección es visible
+        }, { threshold: 0.35 }); // Detecta cuando el 50% de la sección es visible
 
         sections.forEach((section) => observer.observe(section));
 
