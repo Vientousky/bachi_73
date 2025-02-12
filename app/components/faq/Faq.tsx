@@ -37,7 +37,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id="pregunta">
 
       <h1 className="titulo">Preguntas frecuentes</h1>
 

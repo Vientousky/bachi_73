@@ -5,7 +5,7 @@ import styles from "./nosotros.module.css";
 const Nosotros: React.FC = () => {
 
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="nosotros">
       <div className={styles.aboutImg}>
         <div className={styles.item}>
           <Image src="/img/veteranos.webp" alt="expocicion" width={300} height={500} />

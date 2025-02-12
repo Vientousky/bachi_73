@@ -40,7 +40,7 @@ const Propuestas: React.FC = () => {
   ];
 
   return (
-    <section className={styles.propuestas}>
+    <section className={styles.propuestas} id="propuestas">
       <div className={styles.proContainer}>
         <h1 className={styles.titulo}>Propuestas Académicas</h1>
 

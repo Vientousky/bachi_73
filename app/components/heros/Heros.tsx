@@ -3,7 +3,7 @@ import styles from "./home.module.css";
 
 const HomeHero: React.FC = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="heros">
       <div className={styles.container}>
         <h1>
           ¡Bievenido a la{" "}
@@ -18,7 +18,7 @@ const HomeHero: React.FC = () => {
         <div className={styles.btn}>
           <a href="">Ver Reglamento</a>
 
-          <a href="">Saber mas</a>
+          <a href="">Descargar</a>
         </div>
       </div>
     </section>

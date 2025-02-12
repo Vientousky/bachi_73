@@ -4,7 +4,7 @@ import { BsTelephone, BsEnvelopeAt, BsGeoAlt } from "react-icons/bs";
 
 const Contact: React.FC = () => {
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contacto">
       <div className={styles.container}>
         <article className={styles.infoBody}>
           <div className={styles.card}>
