@@ -1,0 +1,59 @@
+.header {
+    position: fixed;
+    top: 5px; /* Asegúrate de que sea una unidad válida (px) */
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1000px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(29, 36, 46);
+    border-radius: 2rem;
+    padding: 10px 20px; /* Un poco más de espacio para hacerlo más equilibrado */
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra más suave */
+    transition: box-shadow 0.3s ease-in-out; /* Agrega transiciones suaves para cambios visuales */
+}
+
+.header:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra cuando el header se pasa por encima */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.navContainer {
+    display: flex;
+    gap: 20px; 
+}
+
+.navContainer a {
+    padding: 8px 14px; 
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navContainer a:hover {
+    color: #4db8ff;
+    transform: scale(1.1); 
+}
+
+.activeLink {
+    color: #4db8ff;
+    font-weight: bold;
+    border-bottom: 2px solid #4db8ff;
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.1);
+}
