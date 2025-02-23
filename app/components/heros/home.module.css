@@ -1,4 +1,4 @@
-.hero {
+& .hero {
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -18,18 +18,18 @@
     text-align: center;
     margin: auto;
 
-    h1 {
+    & h1 {
         font-size: 4rem;
 
-        > strong {
+        & strong {
 
             font-family: var(--font-sofia);
             padding-left: 10px;
         }
     }
 
-    p {
-        width:50ch;
+    & p {
+        max-width:50ch;
         font-size: 1.5rem;
         margin-bottom: 18px;
     }
@@ -39,7 +39,7 @@
     display: inline-flex;
     gap: 20px;
 
-    a {
+    & a {
         color: #ffae00; 
         border: 2px solid #ffae00;
         border-radius: 9999px;
@@ -51,6 +51,18 @@
             color: #121212; 
             border-color: #ffae00;
             box-shadow: 0px 0px 10px rgba(255, 174, 0, 0.5);
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        & h1 {
+            font-size: 3.2rem;
+        }
+
+        & p {
+            font-size: 1.25rem;
         }
     }
 }

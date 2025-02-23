@@ -35,9 +35,9 @@
     padding: 1.4rem;
     transition: 0.3s ease-in;
 
-    .icon {
+    & .icon {
         display: inline-flex;
-        color: #1e90ff;
+        color: var(--color-blue);
         border-radius: 9999px;
         width: fit-content;
         padding: 0.8rem;
@@ -46,24 +46,24 @@
 
     }
 
-    h1 {
+    & h1 {
         font-size: 1.6rem;
         font-weight: 600;
     }
 
-    p {
+    & p {
         font-size: 1.05rem;
         line-height: 1.6;
     }
 
-    a {
+    & a {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-top: auto;
         font-size: 1.25rem;
 
-        >svg {
+        & svg {
             width: 20px;
             height: 20px;
             opacity: 0;
@@ -72,10 +72,10 @@
         }
     }
 
-    ul {
+    & ul {
         list-style: none;
 
-        >li {
+        & li {
             margin-bottom: 10px;
             line-height: 1.4;
         }
@@ -85,15 +85,15 @@
     &:hover {
         box-shadow: 0px 4px 10px var(--card-box-shadow-hover);
 
-        .icon {
-            background: #1e90ff;
+        & .icon {
+            background: var(--color-blue);
             color: aliceblue;
         }
 
-        a {
-            color: #1e90ff;
+        & a {
+            color: var(--color-blue);
 
-            >svg {
+            & svg {
                 opacity: 1;
                 transform: translateX(0);
 
@@ -103,4 +103,12 @@
 
     }
 
+}
+
+/* <===< reponsive >===> */
+
+@media (max-width: 1024px) {
+    .card:nth-child(4) {
+        grid-column: 1 / -1;
+    }
 }
