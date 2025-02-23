@@ -35,8 +35,6 @@
 
 .navContainer {
     display: flex;
-    gap: 20px; 
-}
 
 .navContainer a {
     padding: 8px 14px; 
