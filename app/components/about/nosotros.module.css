@@ -40,7 +40,7 @@
 
     .item {
         border-radius: 0 20px;
-        box-shadow: 0 0 5rem rgba(14, 145, 221, 0.637);
+        box-shadow: 0 0 5rem var(--color-blue);
         transform: translate(-10%, -6%);
         z-index: 1;
 
@@ -80,7 +80,6 @@
     & h1,
     & h2 {
         margin-bottom: 1rem;
-        color: var(--text-primary);
     }
 
     & h1 {
@@ -92,19 +91,21 @@
         font-size: 2rem;
 
         >.strong {
-            color: #1a80d4;
-            font-family: var(--fonts-Sofia);
+            color: var(--color-blue);
+            font-family: var( --font-sofia);
             letter-spacing: 2px;
         }
     }
 
     & p {
         color: var(--text-secondary);
-        font-size: 1.25rem;
+        font-size: 1.26rem;
         font-weight: 500;
         line-height: 1.6;
     }
 }
+
+/* <===< movil >===> */
 
 @media (max-width: 924px) {
     .about {

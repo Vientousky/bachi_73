@@ -32,8 +32,11 @@ const Contact: React.FC = () => {
           </div>
         </article>
 
+        <h1 className={styles.info} >Horario de Anteción al Publico</h1>
+
         <article className="">
           <table className={styles.table}>
+
             <thead className={styles.thead}>
               <tr>
                 <th>Turnos</th>

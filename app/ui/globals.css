@@ -2,35 +2,60 @@
   --font-montserrat: 'Montserrat', sans-serif;
   --font-sofia: "Sofia", serif;
 
+  --backdrop: blur(8px);
+
   --background: #ffffff;
   --background-line: #f0f0f0;
+  --background-hero: rgba(240, 240, 255, 0.7);
+
 
   --card: rgba(226, 228, 235, 0.7);
-  --card-border: rgba(0, 0, 0, 0.1); 
+  --card-hover:rgba(227, 227, 230, 0.7);
+  --card-border: rgba(0, 0, 0, 0.1);
   --card-box-shadow-hover: rgba(0, 0, 0, 0.2);
 
-  --text-primary: #000000;
+  
+
+  --text-primary: #0c0c0c;
   --text-secondary: #333333;
 
-  --color-blue: #157ee7;   
-  --color-green: rgb(5, 180, 45); 
+  --tabla-canbeza:rgba(221, 221, 230, 0.61);
+
+  --color-blue: #1e90ff;
+  --color-morado: #7b4fd2;
+  --color-green: #28a745;
+
+  --F-H: rgba(240, 240, 240, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: rgba(18, 18, 18, 0.98);
-    --background-line: rgb(40, 40, 40); 
+    --background-line: rgb(40, 40, 40);
+    --background-hero: rgba(20, 20, 30, 0.70);
 
     --card: rgba(30, 30, 30, 0.65);
+    --card-hover:rgba(46, 43, 43, 0.65);
     --card-border: rgba(255, 255, 255, 0.1);
-    --card-box-shadow-hover: rgba(0, 0, 0, 0.3); 
+    --card-box-shadow-hover: rgba(0, 0, 0, 0.3);
 
-    --card-backdrop-filter: blur(10px);
+    --tabla-canbeza:rgba(36, 36, 37, 0.61);
 
     --text-primary: #ffffff;
     --text-secondary: #e0e0e0;
+
+    --color-blue: #4693ff;
+    /* Azul con mayor brillo */
+    --color-morado: #9a70e0;
+    /* Morado más pastel */
+    --color-green: #50fa7b;
+    /* Verde más fresco */
+
+    --F-H: rgba(29, 36, 46, 0.712);
   }
 }
+
+
 
 
 html {
@@ -43,7 +68,7 @@ body {
   background-image:
     linear-gradient(to right, var(--background-line) 1px, transparent 1px),
     linear-gradient(to bottom, var(--background-line) 1px, transparent 1px);
-    background-size: 6rem 4rem;
+  background-size: 6rem 4rem;
   font-family: var(--font-montserrat);
 }
 
@@ -61,10 +86,12 @@ h5,
 h6 {
   text-wrap: balance;
   font-family: var(--font-montserrat);
+  color: var(--text-primary);
 }
 
 p {
   text-wrap: pretty;
+  color: var(--text-secondary);
 }
 
 a {
@@ -72,14 +99,12 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 .text-gradient {
-  background:linear-gradient(90deg, var(--color-blue), rgb(177, 198, 243)) ;
+  background: linear-gradient(90deg,
+      var(--color-blue),
+      #ffffff,
+      var(--color-green));
   background-clip: text;
   color: transparent;
+
 }

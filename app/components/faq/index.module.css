@@ -114,22 +114,23 @@
       >li {
         counter-increment: item;
         position: relative;
-        padding-left: 30px;
+        padding-left: 2.2rem;
 
         &::before {
           content: counter(item);
           position: absolute;
+          padding: 2px;
           left: 0;
           top: 50%;
           transform: translateY(-50%);
           width: 24px;
           height: 24px;
-          background-color: #333;
+          background-color: var(--card);
           color: white;
           display: flex;
           align-items: center;
           justify-content: center;
-          border-radius: 8px;
+          border-radius: 5px;
           font-size: 14px;
         }
       }

@@ -21,9 +21,9 @@
 
 @keyframes enhance {
     to {
-        background-color: rgba(29, 36, 46, 0.712);
+        background-color: var(--F-H);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-        backdrop-filter: blur(10px);
+        backdrop-filter: var(--backdrop);
     }
 }
 
