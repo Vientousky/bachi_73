@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Header from "./layout/Header";
-import Footer from "./layout/Pie";
+import Footer from "./layout/Foter";
 import "./ui/globals.css";
 import "./ui/fonts"
 

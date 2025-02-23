@@ -12,9 +12,8 @@
   --text-primary: #000000;
   --text-secondary: #333333;
 
-  --color-blue: rgb(20, 110, 230);   
-  --color-green: rgb(5, 180, 45);    
-  --color-yellow: rgb(240, 180, 10); 
+  --color-blue: #157ee7;   
+  --color-green: rgb(5, 180, 45); 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -80,7 +79,7 @@ a {
 }
 
 .text-gradient {
-  background:linear-gradient(90deg, var(--color-blue), white, var(--color-green)) ;
+  background:linear-gradient(90deg, var(--color-blue), rgb(177, 198, 243)) ;
   background-clip: text;
   color: transparent;
 }

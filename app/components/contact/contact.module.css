@@ -17,7 +17,7 @@
     gap: 1.2rem 1rem;
     margin-bottom: 20px;
 
-    >.card {
+    > .card {
         background-color: var(--card);
         backdrop-filter: blur(8px);
         border: 1px solid var(--card-border);
@@ -27,10 +27,9 @@
 
         &:nth-child(3) {
             grid-column: 1 / 3;
-            /* Hace que el tercer card ocupe toda la fila */
         }
 
-        h1 {
+        & h1 {
             display: flex;
             align-items: center;
             gap: 10px;
@@ -59,14 +58,14 @@
     border: 1px solid var(--card-border);
     border-radius: 18px;
     overflow: hidden;
-    >th,
-    td {
+    & th,
+    & td {
         padding: 12px;
         text-align: left;
         color: #e0e0e0;
     }
 
-    th {
+    & th {
         color: aquamarine;
         border-bottom: 1px solid var(--card-border);
         padding: 12px 15px;
@@ -74,13 +73,14 @@
         text-transform: uppercase;
     }
 
-    tr {
+    & tr {
         transition: 0.3s ease-in;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
     }
 
-    tr:hover {
-        background: rgba(255, 255, 255, 0.15);
-    }
 }
 
 
@@ -88,4 +88,26 @@
     height: 100%;
     width: 100%;
     border-radius: 20px;
+}
+
+/* <===< reponsi >===> */
+
+@media (max-width:762px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+
+    .infoBody {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-column: span 2;
+    }
+
+    .map {
+        height: 240px;
+    }
+
 }

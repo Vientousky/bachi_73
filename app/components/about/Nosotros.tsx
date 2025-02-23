@@ -25,7 +25,7 @@ const Nosotros: React.FC = () => {
       </div>
 
       <div className={styles.aboutInfo}>
-        <h1>Nosotros</h1>
+        <h1 className="" >Nosotros</h1>
 
         <h2>
           E.E.S N°59 Conocido como <strong className={styles.strong}>Bachi 72</strong>

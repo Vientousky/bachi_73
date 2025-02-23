@@ -77,18 +77,18 @@
 
 .aboutInfo {
 
-    h1,
-    h2 {
+    & h1,
+    & h2 {
         margin-bottom: 1rem;
         color: var(--text-primary);
     }
 
-    h1 {
+    & h1 {
         font-size: 3.25rem;
-        
+
     }
 
-    h2 {
+    & h2 {
         font-size: 2rem;
 
         >.strong {
@@ -98,10 +98,47 @@
         }
     }
 
-    p {
+    & p {
         color: var(--text-secondary);
         font-size: 1.25rem;
         font-weight: 500;
         line-height: 1.6;
+    }
+}
+
+@media (max-width: 924px) {
+    .about {
+        flex-direction: column;
+
+        .aboutImg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 220px;
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            .item {
+                transform: translate(-1%, 5%);
+
+
+            }
+
+            .item3,
+            .item4 {
+                display: none;
+            }
+        }
+
+        .aboutInfo {
+            flex: 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    .aboutImg {
+        display: none;
     }
 }
