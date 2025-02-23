@@ -8,7 +8,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding-bottom: 6rem;
+
 }
+
+/* <===< contacto >===> */
 
 .infoBody {
     display: grid;
@@ -34,7 +37,7 @@
             align-items: center;
             gap: 10px;
             margin-bottom: 10px;
-            color: aquamarine;
+            color: var(--color-blue);
 
             >svg {
                 font-size: 1.4rem;
@@ -42,10 +45,15 @@
         }
 
         &:hover {
-            box-shadow: 0 0 10px aquamarine;
+            box-shadow: 0 0 10px var(--color-blue);
         }
     }
 
+}
+
+.info {
+    margin: 2rem;
+    text-align: center;
 }
 
 /* <===< Table >===> */
@@ -58,18 +66,21 @@
     border: 1px solid var(--card-border);
     border-radius: 18px;
     overflow: hidden;
+    & caption {
+        margin-bottom: 1rem;
+    }
+
     & th,
     & td {
         padding: 12px;
         text-align: left;
-        color: #e0e0e0;
+        color: var(--text-primary);
     }
 
     & th {
-        color: aquamarine;
-        border-bottom: 1px solid var(--card-border);
+        color: var(--color-blue);
         padding: 12px 15px;
-        background: rgba(144, 142, 148, 0.1);
+        background: var(--tabla-canbeza);
         text-transform: uppercase;
     }
 
@@ -77,7 +88,7 @@
         transition: 0.3s ease-in;
 
         &:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: var(--card-hover);
         }
     }
 
