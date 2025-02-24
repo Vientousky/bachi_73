@@ -2,7 +2,34 @@ import React from "react";
 import styles from "./contact.module.css";
 import { BsTelephone, BsEnvelopeAt, BsGeoAlt } from "react-icons/bs";
 
+type Turno = 'Mañana' | 'Tarde' | 'Vespertino';
+
+type Horario = {
+  turno: Turno;
+  horario: string;
+  directivo: string;
+};
+
 const Contact: React.FC = () => {
+
+  const horarios: Horario[] = [
+    {
+      turno: 'Mañana',
+      horario: '7:15 AM - 11:00 PM',
+      directivo: 'Directora: Fagunde Maria ',
+    },
+    {
+      turno: 'Tarde',
+      horario: '1:10 PM - 4:00 PM',
+      directivo: 'ViceDirector: Dino Campañola',
+    },
+    {
+      turno: 'Vespertino',
+      horario: '5:30 PM - 8:00 PM',
+      directivo: 'ViceDirectora: Blaho Andre',
+    },
+  ];
+
   return (
     <section className={styles.contact} id="contacto">
       <div className={styles.container}>
@@ -34,7 +61,7 @@ const Contact: React.FC = () => {
 
         <h1 className={styles.info} >Horario de Anteción al Publico</h1>
 
-        <article className="">
+        <article className={styles.container}>
           <table className={styles.table}>
 
             <thead className={styles.thead}>
@@ -46,21 +73,13 @@ const Contact: React.FC = () => {
             </thead>
 
             <tbody className={styles.tbody}>
-              <tr>
-                <td>Mañana</td>
-                <td>7:15 AM 11:00 PM</td>
-                <td>Directora: Fagunde Maria </td>
-              </tr>
-              <tr>
-                <td>Tarde</td>
-                <td>1:10 PM 4:00 PM</td>
-                <td>ViceDirector: Dino Campañola</td>
-              </tr>
-              <tr>
-                <td>Vespertino</td>
-                <td>5:30 PM 8:00 PM</td>
-                <td>ViceDirectora: Blaho Andre</td>
-              </tr>
+              {horarios.map((x, index)=> (
+                 <tr key={index}>
+                 <td data-cell='Turnos' >{x.turno}</td>
+                 <td data-cell='Horarios' >{x.horario}</td>
+                 <td data-cell='Responsable' >{x.directivo}</td>
+               </tr>
+              ))}
             </tbody>
           </table>
         </article>

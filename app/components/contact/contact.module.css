@@ -58,14 +58,20 @@
 
 /* <===< Table >===> */
 
-.table {
+.container{
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    max-width: 100%;   /* Asegura que no se desborde */
+    border-radius: 18px; /* Coincide con el estilo de la tabla */
+}
 
+.table {
     border-collapse: collapse;
     background-color: var(--card);
     backdrop-filter: blur(8px);
     border: 1px solid var(--card-border);
     border-radius: 18px;
     overflow: hidden;
+    overflow-x: auto;
     & caption {
         margin-bottom: 1rem;
     }
@@ -122,3 +128,4 @@
     }
 
 }
+
