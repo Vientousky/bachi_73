@@ -8,6 +8,9 @@
         var(--background-hero)
       ),
       url('/img/fondo.jpg') no-repeat center/cover;
+
+      mask-image: linear-gradient( black 80%, transparent );
+    
 }
 
 .container {
@@ -19,7 +22,6 @@
 
     & h1 {
         font-size: 4rem;
-
         & strong {
 
             font-family: var(--font-sofia);

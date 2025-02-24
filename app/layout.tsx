@@ -6,7 +6,7 @@ import "./ui/fonts"
 
 
 export const metadata: Metadata = {
-  title: "ESS N59",
+  title: "EES N°59 - Colegio del Centenario",
   description: "Escuela de educación secundaria del centenario",
 };
 

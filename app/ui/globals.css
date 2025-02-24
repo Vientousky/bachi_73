@@ -14,7 +14,7 @@
   --card-border: rgba(0, 0, 0, 0.1);
   --card-box-shadow-hover: rgba(0, 0, 0, 0.2);
 
-  
+  --answers:rgba(228, 228, 238, 0.7);
 
   --text-primary: #0c0c0c;
   --text-secondary: #333333;
@@ -39,10 +39,12 @@
     --card-border: rgba(255, 255, 255, 0.1);
     --card-box-shadow-hover: rgba(0, 0, 0, 0.3);
 
-    --tabla-canbeza:rgba(36, 36, 37, 0.61);
-
+    --answers:rgba(49, 49, 54, 0.7);
+    
     --text-primary: #ffffff;
-    --text-secondary: #e0e0e0;
+    --text-secondary: #d8dde2;
+    
+    --tabla-canbeza:rgba(36, 36, 37, 0.61);
 
     --color-blue: #4693ff;
     /* Azul con mayor brillo */
@@ -86,12 +88,11 @@ h5,
 h6 {
   text-wrap: balance;
   font-family: var(--font-montserrat);
-  color: var(--text-primary);
 }
 
 p {
   text-wrap: pretty;
-  color: var(--text-secondary);
+
 }
 
 a {

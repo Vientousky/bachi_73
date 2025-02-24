@@ -42,17 +42,6 @@
     }
   ],
 
-  "TurnosHorarios": [
-    {
-      "titulo": "¿Cuáles son los horarios?",
-      "descripcion": "En esta sección se proporcionan los horarios generales de funcionamiento de la institución, incluyendo apertura y cierre, así como horarios específicos para diferentes actividades."
-    },
-    {
-      "titulo": "¿Cuáles son los horarios de los turnos?",
-      "descripcion": "Aquí se detallan los horarios específicos de los turnos disponibles para los estudiantes. Incluye información sobre la duración de cada turno y los intervalos entre ellos."
-    }
-  ],
-
   "InscripcionesPases": [
     {
       "titulo": "Requisitos para la inscripción a 1º año",

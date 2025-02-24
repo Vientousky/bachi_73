@@ -11,7 +11,7 @@
 }
 
 .titulo {
-    color: orange;
+    color: var(--color-green);
     font-size: 4rem;
     font-family: var( --font-sofia);
     letter-spacing: 2px;
