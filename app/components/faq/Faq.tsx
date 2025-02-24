@@ -6,7 +6,6 @@ import styles from "./index.module.css";
 import data from "./repuestas.json";
 import {
   LuFileText,
-  LuCalendarClock,
   LuClipboardCheck,
   LuBookOpenCheck,
 } from "react-icons/lu";
@@ -15,14 +14,12 @@ type Category = keyof typeof data;
 
 const categoryIcons: Record<Category, React.ReactNode> = {
   Reglamento: <LuFileText />,
-  TurnosHorarios: <LuCalendarClock />,
   InscripcionesPases: <LuClipboardCheck />,
   MateriaDeudadas: <LuBookOpenCheck />,
 };
 
 const categoryTitles: Record<Category, string> = {
   Reglamento: "Reglamentos y Sanciones",
-  TurnosHorarios: "Horarios y Turnos",
   InscripcionesPases: "Inscripciones y Pases",
   MateriaDeudadas: "Materia Adeudar",
 };
@@ -41,7 +38,7 @@ const FAQ: React.FC = () => {
 
       <h1 className="titulo">Preguntas frecuentes</h1>
 
-      <div className={styles.filterContainer}>
+      <div className={styles.categorias}>
         {(Object.keys(data) as Category[]).map((category) => (
           <div
             key={category}

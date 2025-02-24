@@ -31,7 +31,7 @@
         transition: transform 0.3s ease-in-out;
         overflow: hidden;
 
-        >img {
+        & img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -90,7 +90,7 @@
     & h2 {
         font-size: 2rem;
 
-        >.strong {
+        > .strong {
             color: var(--color-blue);
             font-family: var( --font-sofia);
             letter-spacing: 2px;
