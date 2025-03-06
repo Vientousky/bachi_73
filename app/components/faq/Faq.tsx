@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { Answer } from "./Answers";
 import styles from "./index.module.css";
-import data from "./repuestas.json";
+import data from "@/app/data/repuestas.json";
 import {
   LuFileText,
   LuClipboardCheck,
