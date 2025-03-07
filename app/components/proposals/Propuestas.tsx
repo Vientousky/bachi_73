@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import {useRef} from "react";
 import styles from "./propuestas.module.css";
 import { BsPeople, BsBook, BsAlarm, BsArrowRight } from "react-icons/bs";
 
@@ -11,6 +13,9 @@ interface Card {
 }
 
 const Propuestas: React.FC = () => {
+
+  const modalRef = useRef<HTMLDialogElement>(null);
+
   const cards: Card[] = [
     {
       icon: BsAlarm,
@@ -35,22 +40,29 @@ const Propuestas: React.FC = () => {
     {
       icon: BsPeople,
       titulo: "Equipos de Trabajo",
-      url:"/equipo-trabajo",
+      url: "/equipo-trabajo",
       descripcion:
         "Contamos con un equipo de profesionales capacitados, comprometidos en brindar la mejor experiencia educativa a nuestros estudiantes.",
-
     },
   ];
 
+  const abrilModal = () => {
+    modalRef.current?.showModal();
+  };
+
+  const cerrarModalSiClicFuera = (e: React.MouseEvent<HTMLDialogElement>) => {
+    if (e.target === modalRef.current) {
+      modalRef.current?.close();
+    }
+  };
+
   return (
     <section className={styles.propuestas} id="propuestas">
+      <h1 className="titulo">Propuestas Académicas</h1>
 
-        <h1 className="titulo">Propuestas Académicas</h1>
-
-        <div className={styles.container}>
-
+      <div className={styles.container}>
         {cards.map((x, index) => (
-          <div key={index}  className={styles.card}>
+          <div key={index} className={styles.card}>
             <div className={styles.icon}>
               <x.icon />
             </div>
@@ -59,24 +71,39 @@ const Propuestas: React.FC = () => {
             <p>{x.descripcion}</p>
             {x.lista && (
               <ul>
-                {x.lista.map((item, i)=>(
+                {x.lista.map((item, i) => (
                   <li key={i}>
-                  <strong>{item.titulo}</strong> {item.texto}
-                </li>
+                    <strong>{item.titulo}</strong> {item.texto}
+                  </li>
                 ))}
-            </ul>
+              </ul>
             )}
 
-            <a href="/equipo-trabajo">
-              Saber Mas
-              <BsArrowRight />
-            </a>
+            {index === 0 && (
+              <a onClick={abrilModal}>
+                Saber Mas
+                <BsArrowRight />
+              </a>
+            )}
+
+            {index === 2 && (
+              <a href={x.url} >
+                Saber Mas
+                <BsArrowRight />
+              </a>
+            )}
           </div>
         ))}
+      </div>
 
+      <dialog ref={modalRef} className={styles.modal} onClick={cerrarModalSiClicFuera}>
+        <div className={styles.modalContent}>
+
+          <h1>Estamos Analizando La Mejor Solución</h1>
+
+          <button onClick={() => modalRef.current?.close()}>OK</button>
         </div>
-        
-
+      </dialog>
     </section>
   );
 };
