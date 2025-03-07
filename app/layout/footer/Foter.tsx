@@ -6,18 +6,17 @@ import {
   BsPersonWorkspace,
 } from "react-icons/bs";
 import Link from "next/link";
-import Interrutor from "./interrutor";
 import styles from "./footer.module.css";
 
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.info}>
-        <article className={styles.redes}>
+        <article className={`${styles.enlaces} ${styles.link}`}>
           <Link href="/reglamento" target="_parent" rel="noopener noreferrer">
             <BsJournalBookmark />
           </Link>
-          <Link href="/equipo" target="_parent" rel="noopener noreferrer">
+          <Link href="/equipo-trabajo" target="_parent" rel="noopener noreferrer">
             <BsPersonWorkspace />
           </Link>
         </article>
@@ -30,7 +29,7 @@ const Footer: React.FC = () => {
           </p>
         </article>
 
-        <article className={styles.redes}>
+        <article className={`${styles.enlaces} ${styles.redes}`}>
           <Link
             href="https://www.facebook.com/escueladelcentenarioPRSP"
             target="_blank"
@@ -53,7 +52,6 @@ const Footer: React.FC = () => {
           &copy; {new Date().getFullYear()} EES N59. casi todos los derechos
           reservados
         </p>
-      <Interrutor/>
       </div>
 
     </footer>

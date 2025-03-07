@@ -7,6 +7,7 @@ interface Card {
   titulo: string;
   descripcion: string;
   lista?: { titulo: string; texto: string }[];
+  url?: string;
 }
 
 const Propuestas: React.FC = () => {
@@ -34,8 +35,10 @@ const Propuestas: React.FC = () => {
     {
       icon: BsPeople,
       titulo: "Equipos de Trabajo",
+      url:"/equipo-trabajo",
       descripcion:
         "Contamos con un equipo de profesionales capacitados, comprometidos en brindar la mejor experiencia educativa a nuestros estudiantes.",
+
     },
   ];
 
@@ -62,7 +65,7 @@ const Propuestas: React.FC = () => {
             </ul>
             )}
 
-            <a href="">
+            <a href="/equipo-trabajo">
               Saber Mas
               <BsArrowRight />
             </a>

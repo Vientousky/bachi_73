@@ -4,63 +4,30 @@
 
   --backdrop: blur(8px);
 
-  --background: #ffffff;
-  --background-line: #f0f0f0;
-  --background-hero: rgba(240, 240, 255, 0.7);
+  --background: rgba(18, 18, 18, 0.98);
+  --background-line: rgb(40, 40, 40);
+  --background-hero: rgba(20, 20, 30, 0.70);
 
 
-  --card: rgba(226, 228, 235, 0.7);
-  --card-hover:rgba(227, 227, 230, 0.7);
-  --card-border: rgba(0, 0, 0, 0.1);
-  --card-box-shadow-hover: rgba(0, 0, 0, 0.2);
+  --card: rgba(30, 30, 30, 0.65);
+  --card-hover: rgba(46, 43, 43, 0.65);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-box-shadow-hover: rgba(0, 0, 0, 0.3);
 
-  --answers:rgba(228, 228, 238, 0.7);
+  --answers: rgba(49, 49, 54, 0.7);
 
-  --text-primary: #0c0c0c;
-  --text-secondary: #333333;
+  --text-primary: #ffffff;
+  --text-secondary: #d8dde2;
 
-  --tabla-canbeza:rgba(221, 221, 230, 0.61);
+  --tabla-canbeza: rgba(221, 221, 230, 0.61);
 
-  --color-blue: #1e90ff;
-  --color-morado: #7b4fd2;
-  --color-green: #28a745;
+  --tabla-canbeza: rgba(36, 36, 37, 0.61);
 
-  --F-H: rgba(240, 240, 240, 0.7);
-}
+  --color-blue: #4693ff;
+  --color-morado: #9a70e0;
+  --color-green: #31af50;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: rgba(18, 18, 18, 0.98);
-    --background-line: rgb(40, 40, 40);
-    --background-hero: rgba(20, 20, 30, 0.70);
-
-    --card: rgba(30, 30, 30, 0.65);
-    --card-hover:rgba(46, 43, 43, 0.65);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --card-box-shadow-hover: rgba(0, 0, 0, 0.3);
-
-    --answers:rgba(49, 49, 54, 0.7);
-    
-    --text-primary: #ffffff;
-    --text-secondary: #d8dde2;
-    
-    --tabla-canbeza:rgba(36, 36, 37, 0.61);
-
-    --color-blue: #4693ff;
-    /* Azul con mayor brillo */
-    --color-morado: #9a70e0;
-    /* Morado más pastel */
-    --color-green: #31af50;
-    /* Verde más fresco */
-
-    --F-H: rgba(29, 36, 46, 0.712);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  --F-H: rgba(29, 36, 46, 0.712);
 }
 
 html {
