@@ -1,0 +1,111 @@
+.footer {
+    background-color: var(--card);
+    backdrop-filter: var(--backdrop);
+    border: 1px solid var(--card-border);
+    border-radius: 20px 20px 0 0;
+    max-width: 1000px;
+    min-height: 26vh;
+    margin: auto;
+    padding: 2rem;
+    width: 90%;
+}
+
+.info, .config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.info {
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom:1rem ;
+
+    .texto {
+        position: relative;
+
+        .titulo {
+            margin-bottom: 1.6rem;
+            font-size: 3rem;
+            color: var(--color-morado);
+            text-align: center;
+        }
+
+        .subtitulo {
+            font-size: 1.5rem;
+            font-family: var(--font-sofia);
+            font-style: italic;
+            position: absolute;
+            top:30%;
+            left: 65%;
+            transform: rotate(-16deg); 
+        }
+
+        .eslogan {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.5rem;
+
+        & a {
+            display: flex;
+            align-items: center; 
+            font-size: 1.4rem;
+            transition:all 0.3s ease-in-out;
+            background-color: var(--answers);
+            border: 1px solid var(--card-border);
+            border-radius: 10px;
+            padding: 10px ; 
+    
+            &:hover {
+                transform: scale(1.1); 
+                background-color: var(--color-morado); 
+                transform: rotate(10deg);
+            }
+        }
+    }
+    
+}
+
+.config {
+    padding-top: 1.1rem;
+}
+
+.modo {
+    display: flex;
+    align-items: center;
+    background-color: var(--answers);
+    border-radius: 9999px;
+    padding:10px;
+    gap: 1rem;
+
+    & svg {
+        fill: var(--text-primary);
+        font-size: 1.15rem;
+    }
+
+    & button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        border: none;
+        background: none;
+        border-radius: 9999px;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+
+        &.activo {
+            background-color: var(--card);
+        }
+
+    }
+}
+
+
