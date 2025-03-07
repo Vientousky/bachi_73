@@ -99,7 +99,7 @@ const NormativaSection = ({ data }: { data: NormativaData }) => (
   <>
     <h2 className={styles.articulosTitulo}>{data.title}</h2>
 
-    <ol>
+    <ol id="number">
       {data.sections.map((section, index) => (
         <li key={index} className={styles.seccionContainer}>
           <h3 className={styles.seccionTitulo}>{section.title}</h3>

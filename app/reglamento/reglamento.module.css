@@ -165,3 +165,9 @@
 .tablaCell {
   padding: 1rem;
 }
+
+@media (max-width: 768px) {
+  .categoriasRow {
+    flex-direction: column;
+  }
+}
