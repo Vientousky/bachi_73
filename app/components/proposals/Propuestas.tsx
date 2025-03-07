@@ -44,8 +44,10 @@ const Propuestas: React.FC = () => {
 
   return (
     <section className={styles.propuestas} id="propuestas">
-      <div className={styles.proContainer}>
-        <h1 className={styles.titulo}>Propuestas Académicas</h1>
+
+        <h1 className="titulo">Propuestas Académicas</h1>
+
+        <div className={styles.container}>
 
         {cards.map((x, index) => (
           <div key={index}  className={styles.card}>
@@ -72,7 +74,9 @@ const Propuestas: React.FC = () => {
           </div>
         ))}
 
-      </div>
+        </div>
+        
+
     </section>
   );
 };

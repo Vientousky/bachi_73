@@ -1,26 +1,19 @@
-.propuestas {
-    width: 100%;
-    min-height: 50vh;
-}
 
-.proContainer {
+
+.propuestas {
+    max-width: 1000px;
+    min-height: 50vh;
+    margin: 0 auto;
+    width: 90%;
+}
+/* <===< Card >===> */
+
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-template-rows: auto auto;
     gap: 2rem;
-
-    max-width: 1000px;
-    margin: 0 auto;
-    width: 90%;
 }
-
-.titulo {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-size: 3rem;
-}
-
-/* <===< Card >===> */
 
 .card {
     display: flex;

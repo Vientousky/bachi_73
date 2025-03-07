@@ -33,6 +33,9 @@ const Contact: React.FC = () => {
   return (
     <section className={styles.contact} id="contacto">
       <div className={styles.container}>
+
+        <h1 className="titulo" >Contactos</h1>
+
         <article className={styles.infoBody}>
           <div className={styles.card}>
             <h1>
