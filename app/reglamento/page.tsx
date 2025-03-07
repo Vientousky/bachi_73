@@ -96,10 +96,10 @@ const AcuerdoSection = ({ data }: { data: AcuerdoData }) => (
 );
 
 const NormativaSection = ({ data }: { data: NormativaData }) => (
-  <>
+  < >
     <h2 className={styles.articulosTitulo}>{data.title}</h2>
 
-    <ol id="number">
+    <ol>
       {data.sections.map((section, index) => (
         <li key={index} className={styles.seccionContainer}>
           <h3 className={styles.seccionTitulo}>{section.title}</h3>
@@ -153,7 +153,7 @@ const NormativaSection = ({ data }: { data: NormativaData }) => (
 
           {/* Renderizar reglas de asistencia si existen */}
           {section.attendance_rules && (
-            <ol className={styles.ol}>
+            <ol  className={styles.ol}>
               {section.attendance_rules.map((rule, idx) => (
                 <li key={idx} >
                   {renderWithBold(rule)}
