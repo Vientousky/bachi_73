@@ -1,4 +1,4 @@
-& .hero {
+.hero {
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -71,5 +71,13 @@
         & p {
             font-size: 1.25rem;
         }
+    }
+}
+
+
+@media (max-width:400px) {
+
+    .hero {
+        background-attachment: local;
     }
 }
