@@ -122,6 +122,36 @@
     .map {
         height: 240px;
     }
-
 }
+
+@media (max-width:400px) {
+    .table  {
+
+        & th {
+            display: none;
+        }
+
+        
+
+        & td {
+            display: grid;
+            grid-template-columns: 12ch auto;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+
+            &:first-child {
+                padding-top: 2rem;
+            }
+
+            &:last-child {
+                padding-bottom: 2rem;
+            }
+
+            &::before {
+                content: attr(data-cell) ": ";
+                font-weight: 700;
+            }
+        }
+    }
+} 
 
