@@ -120,8 +120,8 @@ const NormativaSection = ({ data }: { data: NormativaData }) => (
               <tbody>
                 {section.cycles.map((cycle, idx) => (
                   <tr key={idx} className={styles.tablaRow}>
-                    <td className={styles.tablaCell}>{cycle.year_range}</td>
-                    <td className={styles.tablaCell}>{cycle.cycle}</td>
+                    <td data-cell="Año" className={styles.tablaCell}>{cycle.year_range}</td>
+                    <td data-cell="Ciclos" className={styles.tablaCell}>{cycle.cycle}</td>
                   </tr>
                 ))}
               </tbody>
@@ -143,8 +143,8 @@ const NormativaSection = ({ data }: { data: NormativaData }) => (
               <tbody>
                 {section.academic_periods.map((period, idx) => (
                   <tr key={idx} className={styles.tablaRow}>
-                    <td className={styles.tablaCell}>{period.period}</td>
-                    <td className={styles.tablaCell}>{period.duration}</td>
+                    <td data-cell="Periodo" className={styles.tablaCell}>{period.period}</td>
+                    <td data-cell="Duracion" className={styles.tablaCell}>{period.duration}</td>
                   </tr>
                 ))}
               </tbody>
