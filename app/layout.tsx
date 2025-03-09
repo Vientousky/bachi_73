@@ -8,6 +8,7 @@ import "./ui/fonts"
 export const metadata: Metadata = {
   title: "EES N°59 - Colegio del Centenario",
   description: "Escuela de educación secundaria del centenario",
+  metadataBase: new URL("https://ees-n59.vercel.app")
 };
 
 export default function RootLayout({
