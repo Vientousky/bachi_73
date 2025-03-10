@@ -13,7 +13,7 @@ const Proximamente: React.FC = () => {
     >
       <h1
         style={{
-          fontSize: "4rem",
+          fontSize: "3rem",
           fontWeight: "bold",
           textAlign: "center",
           transition: "opacity 1.5s ease-in-out",
