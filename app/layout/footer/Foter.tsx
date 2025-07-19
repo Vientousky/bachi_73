@@ -49,8 +49,7 @@ const Footer: React.FC = () => {
 
       <div className={styles.config}>
         <p className={styles.copy}>
-          &copy; {new Date().getFullYear()} EES N59. casi todos los derechos
-          reservados
+          Creado por Vientousky con ❤️
         </p>
       </div>
 
