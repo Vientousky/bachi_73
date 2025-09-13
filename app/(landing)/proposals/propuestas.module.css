@@ -28,7 +28,7 @@
 
     .icon {
         display: inline-flex;
-        color: var(--color-blue);
+        color: var(--color-az-500);
         border-radius: 9999px;
         width: fit-content;
         padding: 0.8rem;
@@ -78,12 +78,12 @@
         box-shadow: 0px 4px 10px var(--card-box-shadow-hover);
 
         & .icon {
-            background: var(--color-blue);
+            background: var(--color-az-500);
             color: aliceblue;
         }
 
         & a {
-            color: var(--color-blue);
+            color: var(--color-az-500);
 
             & svg {
                 opacity: 1;
@@ -97,61 +97,8 @@
 
 /* <===< Modal >===> */
 
-.modal {
-    width: min(90%, 1000px); 
-    margin: auto;
-
-    background: rgba(var(--card-rgb), 0.9); 
-    backdrop-filter: blur(12px); 
-
-    border: 1px solid var(--card-border);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); 
-
-    color: var(--text-primary);
-    border-radius: 24px; 
-    overflow: hidden; 
-
-    scale: 0;
-    transition: scale .3s ease-in,
-    display .3s ease-in allow-discrete;
-
-    &[open] {
-        scale: 1;
-        transition: scale .3s ease-in-out;
-    
-        @starting-style {
-            scale:0;
-        }
-    
-    }
-
-    &::backdrop {
-        background: linear-gradient(rgba(40, 42, 55, 0.6),rgba(25, 26, 34, 0.6));
-    }
-}
 
 
-
-
-.modalContent {
-    padding: 2rem;
-    text-align: center;
-    
-
-    & h1 {
-        margin-bottom: 1rem;
-    }
-
-    & button {
-        cursor: pointer;
-        background-color: var(--color-morado);
-        border-radius: 99999px;
-        border: none;
-        padding:8px 10px ;
-        font-size: 1.2rem;
-        color: var(--text-primary);
-    }
-}
 
 
 /* <===< reponsive >===> */

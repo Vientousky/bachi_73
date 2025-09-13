@@ -1,17 +1,10 @@
-import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
+
 import Header from "./layout/header/Header";
-import Footer from "./layout/footer/Foter";
+import Footer from "./layout/footer/Footer";
 import "./ui/globals.css";
-import "./ui/fonts"
-
-
-export const metadata: Metadata = {
-  title: "EES N°59 - Colegio del Centenario",
-  description: "Escuela de educación secundaria del centenario",
-  metadataBase: new URL("https://ees-n59.vercel.app")
-};
+import "./ui/fonts";
 
 export default function RootLayout({
   children,
@@ -24,8 +17,8 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer/>
-        <SpeedInsights/>
-        <Analytics/>
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

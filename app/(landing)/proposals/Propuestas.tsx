@@ -1,6 +1,3 @@
-"use client";
-
-import {useRef} from "react";
 import styles from "./propuestas.module.css";
 import { BsPeople, BsBook, BsAlarm, BsArrowRight } from "react-icons/bs";
 
@@ -13,8 +10,6 @@ interface Card {
 }
 
 const Propuestas: React.FC = () => {
-
-  const modalRef = useRef<HTMLDialogElement>(null);
 
   const cards: Card[] = [
     {
@@ -46,16 +41,6 @@ const Propuestas: React.FC = () => {
     },
   ];
 
-  const abrilModal = () => {
-    modalRef.current?.showModal();
-  };
-
-  const cerrarModalSiClicFuera = (e: React.MouseEvent<HTMLDialogElement>) => {
-    if (e.target === modalRef.current) {
-      modalRef.current?.close();
-    }
-  };
-
   return (
     <section className={styles.propuestas} id="propuestas">
       <h1 className="titulo">Propuestas Académicas</h1>
@@ -79,13 +64,6 @@ const Propuestas: React.FC = () => {
               </ul>
             )}
 
-            {index === 0 && (
-              <a onClick={abrilModal}>
-                Saber Mas
-                <BsArrowRight />
-              </a>
-            )}
-
             {index === 2 && (
               <a href={x.url} >
                 Saber Mas
@@ -95,15 +73,6 @@ const Propuestas: React.FC = () => {
           </div>
         ))}
       </div>
-
-      <dialog ref={modalRef} className={styles.modal} onClick={cerrarModalSiClicFuera}>
-        <div className={styles.modalContent}>
-
-          <h1>Estamos Analizando La Mejor Solución</h1>
-
-          <button onClick={() => modalRef.current?.close()}>OK</button>
-        </div>
-      </dialog>
     </section>
   );
 };

@@ -38,7 +38,7 @@
 
   &:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 4px 10px var(--color-az-500);
 
     & svg,
     & p {
@@ -48,10 +48,10 @@
 }
 
 .filterItem.activeFilter {
-  border-color: var(--color-blue);
+  border-color: var(--color-az-500);
 
   & svg {
-    color: var(--color-blue);
+    color: var(--color-az-500);
   }
 
   & p {

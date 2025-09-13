@@ -27,7 +27,7 @@
         .titulo {
             margin-bottom: 1.6rem;
             font-size: 3rem;
-            color: var(--color-morado);
+            color: var(--color-mo-500);
             text-align: center;
         }
 
@@ -67,7 +67,7 @@
     
             &:hover {
                 transform: scale(1.1); 
-                background-color: var(--color-morado); 
+                background-color: var(--color-mo-500); 
                 transform: rotate(10deg);
             }
         }

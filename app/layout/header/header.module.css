@@ -50,7 +50,7 @@
         transition: color 0.3s ease, transform 0.3s ease;
 
         &:hover {
-            color: #4db8ff;
+            color: var(--color-az-500);
             transform: scale(1.06);
         }
     }
@@ -58,8 +58,8 @@
 
 
 .activeLink {
-    color: #4db8ff;
-    border-bottom: 2px solid #4db8ff;
+    color: var(--color-az-500);
+    border-bottom: 2px solid var(--color-az-500);
     font-weight: bold;
     transform: scale(1.06);
 }
