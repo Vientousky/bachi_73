@@ -25,31 +25,20 @@ export const metadata: Metadata = {
     "Colegios secundarios barrio Juan Domingo Perón",
     "Escuela de enseñanza secundaria Chaco",
   ],
-  metadataBase: new URL("https://ees-n59.vercel.app"),
-
-  openGraph: {
-    title: "EES N°59 - Colegio del Centenario",
-    description:
-      "Escuela de Educación Secundaria en Presidencia Roque Sáenz Peña, Chaco.",
-    url: "https://ees-n59.vercel.app",
-    siteName: "EES N°59",
+   openGraph: {
+    title: "EES N°59",
+    description: "Escuela de Educación Secundaria del Centenario en Presidencia Roque Sáenz Peña, Chaco, Argentina.",
+    url: "https://misitio.com",
+    siteName: "Mi sitio",
     images: [
       {
-        url: "img/opengraph-Loading.png",
+        url: "/default-og.png",
         width: 1200,
         height: 630,
-        alt: "EES N°59 - Colegio del Centenario",
+        alt: "Imagen de la web",
       },
     ],
-    locale: "es_AR",
     type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "EES N°59 - Colegio del Centenario",
-    description: "Escuela de Educación Secundaria en Sáenz Peña, Chaco.",
-    images: ["img/opengraph-Loading.png"],
   },
 };
 
