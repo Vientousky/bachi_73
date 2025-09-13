@@ -40,7 +40,7 @@
 
     .item {
         border-radius: 0 20px;
-        box-shadow: 0 0 5rem var(--color-blue);
+        box-shadow: 0 0 4rem var(--color-az-400);
         transform: translate(-10%, -6%);
         z-index: 1;
 
@@ -91,7 +91,7 @@
         font-size: 2rem;
 
         > .strong {
-            color: var(--color-blue);
+            color: var(--color-az-500);
             font-family: var( --font-sofia);
             letter-spacing: 2px;
         }

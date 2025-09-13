@@ -11,12 +11,14 @@ const HomeHero: React.FC = () => {
         </h1>
 
         <p>
-          En esta institución, tanto usted como sus hijos tendrán la oportunidad
-          de adquirir un amplio abanico de conocimientos.
+          Esta web no es la official de momento. Toda la informacion que esta
+          aqui son de mostración
         </p>
 
         <div className={styles.btn}>
-          <Link className={styles.ir}  href="/reglamento">Ver Reglamento</Link>
+          <Link className={styles.ir} href="/reglamento">
+            Ver Reglamento
+          </Link>
 
           <a className={styles.descargar} href="">
             Descargar

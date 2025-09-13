@@ -21,9 +21,12 @@
 
   --tabla-canbeza: rgba(36, 36, 37, 0.61);
 
-  --color-blue: #4693ff;
-  --color-morado: #9a70e0;
-  --color-green: #31af50;
+  --color-az-500: #4693ff;
+  --color-az-400: #3180ee;
+  --color-mo-500: #9a70e0;
+  --color-mo-400: #774bbd;
+  --color-ve-500: #31af50;
+  --color-ve-400: #347e47;
 
   --F-H: rgba(29, 36, 46, 0.712);
 }
@@ -70,9 +73,9 @@ a {
 
 .text-gradient {
   background: linear-gradient(90deg,
-      var(--color-blue),
+      var(--color-az-500),
       #ffffff,
-      var(--color-green));
+      var(--color-ve-500));
   background-clip: text;
   color: transparent;
 
