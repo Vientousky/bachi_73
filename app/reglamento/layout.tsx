@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ESS N°59 | Reglamentos",
   description:
-    "Encuentra todo el reglamento del colegio para no tener icovenientes",
+    "Encuentra todo el reglamento del colegio para no tener incovenientes",
   keywords: [
     "Reglamento EES N°59",
     "Reglamento Colegio del Centenario",
@@ -12,30 +12,20 @@ export const metadata: Metadata = {
     "Derechos y deberes estudiantes EES 59",
     "Reglamento interno colegio Centenario",
   ],
-  metadataBase: new URL("https://ees-n59.vercel.app"),
-
   openGraph: {
     title: "EES N°59 | Reglamento",
-    description: "Reglamento del colegio EES N°59",
+    description: "Reglamento completo del colegio",
     url: "https://ees-n59.vercel.app/reglamento",
     siteName: "EES N°59",
     images: [
       {
-        url: "img/opengraph-reglamento.png",
+        url: "/reglamento-og.png",
         width: 1200,
         height: 630,
-        alt: "EES N°59 - Colegio del Centenario",
+        alt: "Imagen OG reglamento",
       },
     ],
-    locale: "es_AR",
-    type: "website",
-  },
-
-  twitter: {
-    card: "summary_large_image",
-    title: "EES N°59 | Reglamento",
-    description: "Reglamento del colegio EES N°59",
-    images: ["img/opengraph-reglamento.png"],
+    type: "article",
   },
 };
 
