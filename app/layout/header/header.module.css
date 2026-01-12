@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    top: 10px;
+    top: 6%;
     left: 50%;
     transform: translateX(-50%);
     max-width: 1000px;
@@ -21,6 +21,7 @@
 
 @keyframes enhance {
     to {
+        top: 2%;
         background-color: var(--card);
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         backdrop-filter: var(--backdrop);
