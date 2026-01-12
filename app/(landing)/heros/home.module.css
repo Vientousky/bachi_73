@@ -1,64 +1,85 @@
+/*MENSAJES DE ABERTENCIA*/
+.notification {
+    background: var(--color-ve-500);
+    color: black;
+
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: 600;
+    padding: 0.6rem 0.8rem;
+}
+
+/*PRESENTACION*/
+
 .hero {
     display: flex;
     width: 100%;
     min-height: 100vh;
 
-    background: linear-gradient(var(--background-hero),
-            var(--background-hero)),
-        url('/img/fondo.jpg') no-repeat center/cover;
+    background: linear-gradient(var(--background-hero), var(--background-hero)), url('/img/fondo.jpg') no-repeat center/cover;
     background-attachment: fixed;
     mask-image: linear-gradient(black 80%, transparent);
-}
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
 
-    & h1 {
-        font-size: 4rem;
+        & h1 {
+            font-size: 4em;
+            font-weight: 700;
 
-        & strong {
+            & strong {
+                font-family: var(--font-sofia);
+                padding-left: 12px;
+            }
+        }
 
-            font-family: var(--font-sofia);
-            padding-left: 10px;
+        & p {
+            color: var(--text-secondary);
+            max-width: 50ch;
+            font-size: 1.5em;
+            font-weight: 500;
+            margin-bottom: 1.6rem;
+        }
+
+        .link {
+            display: inline-flex;
+            gap: 1rem;
+
+            & a {
+                border-radius: 6px;
+                padding: 8px 16px;
+
+                font-size: 1em;
+                font-weight: 500;
+                letter-spacing: 2;
+
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: var(--color-az-400);
+                    border-color: var(--color-az-400);
+                    box-shadow: 0px 0px 10px var(--color-az-400);
+                }
+            }
+
+            .ir {
+                background: var(--color-az-500);
+            }
+
+            .donwload {
+                border: 2px solid var(--color-az-500);
+            }
+
         }
     }
 
-    & p {
-        max-width: 50ch;
-        font-size: 1.5rem;
-        margin-bottom: 18px;
-    }
 }
 
-.btn {
-    display: inline-flex;
-    gap: 20px;
-
-    & a {
-        border-radius: 9999px;
-        padding: 8px 14px;
-        transition: 0.3s ease-in-out;
-
-        &:hover {
-            background-color: var(--color-az-400);
-            border-color: var(--color-az-400);
-            box-shadow: 0px 0px 10px var(--color-az-400);
-        }
-    }
-
-    .ir {
-        background: var(--color-az-500);
-    }
-
-    .descargar {
-        border: 2px solid var(--color-az-500);
-    }
-
-}
+/*REPONSIVILIDAD*/
 
 @media (max-width:768px) {
     .container {

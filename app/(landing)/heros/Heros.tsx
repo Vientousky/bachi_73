@@ -4,28 +4,35 @@ import Link from "next/link";
 
 const HomeHero: React.FC = () => {
   return (
-    <section className={styles.hero} id="heros">
-      <div className={styles.container}>
-        <h1>
-          ¡Bievenido a la <strong className="text-gradient">ESS N59!</strong>
-        </h1>
+    <>
 
-        <p>
-          Esta web no es la official de momento. Toda la informacion que esta
-          aqui son de mostración
-        </p>
+    <div className={styles.notification}>
+      <p>Web no official del colegio EES N59 / Todo la información tomerserla con pinza </p>
+    </div>
 
-        <div className={styles.btn}>
-          <Link className={styles.ir} href="/reglamento">
-            Ver Reglamento
-          </Link>
+      <section className={styles.hero} id="heros">
+        <div className={styles.container}>
+          <h1>
+            ¡Bievenido a la <strong className="text-gradient">ESS N59!</strong>
+          </h1>
 
-          <a className={styles.descargar} href="">
-            Descargar
-          </a>
+          <p>
+            Esta web no es la official de momento. Toda la informacion que esta
+            aqui son de mostración
+          </p>
+
+          <div className={styles.link}>
+            <Link className={styles.ir} href="/reglamento">
+              Ver Reglamento
+            </Link>
+
+            <a className={styles.donwload} href="">
+              Descargar
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

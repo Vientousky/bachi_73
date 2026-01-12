@@ -1,0 +1,95 @@
+.wrapping {
+    max-width: 1024px;
+    width: 90%;
+
+    margin: auto;
+    padding-top: 4rem;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .hierarchy {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+
+        .workesCard {
+            display: flex;
+            gap: 1.5rem;
+
+            .line {
+                display: flex;
+                flex-direction: column;
+                width: 25px;
+                min-height: 0;
+
+                .top,
+                .buttom {
+                    flex: 1;
+                    width: 100%;
+                    border-left: 4px solid var(--color-ve-400);
+                }
+
+                .top {
+                    border-bottom: 4px solid var(--color-ve-400);
+                }
+
+            }
+
+            .profile {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                background: var(--card);
+                backdrop-filter: blur(8px);
+                border: 1px solid var(--card-border);
+                border-radius: 12px;
+
+                padding: 10px 16px;
+                transition: 0.3s ease-in-out;
+
+                .img svg {
+                    font-size: 3em;
+                }
+
+                .info {
+
+                    h2 {
+                        font-size: 1.6em;
+                        font-weight: 600;
+                        margin-bottom: 4px;
+                    }
+
+                    p {
+                        font-size: 1.05em;
+                        font-weight: 400;
+                        color: var(--text-secondary);
+                    }
+                }
+
+                &:hover {
+                    background: var(--card-hover);
+                }
+            }
+        }
+
+
+        .ml-2 {
+            margin-left: 2rem;
+        }
+
+        .ml-3 {
+            margin-left: 3rem;
+        }
+
+        .ml-4 {
+            margin-left: 5rem;
+        }
+
+    }
+}
